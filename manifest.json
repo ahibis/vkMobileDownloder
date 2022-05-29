@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "vkMobileDownloder",
+    "description": "скачивает видео с мобильной версии вк",
+    "version": "0.1.1",
+    "browser_action": { },
+
+	"icons": { 
+    "16": "calc.png",
+    "48": "calc.png",
+    "128": "calc.png" 
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://m.vk.com/*"],
+      "js": [ "sk.js" ]
+    }
+  ],
+  "background": {
+  },
+    "permissions": [
+  ]
+}
